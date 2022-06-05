@@ -18,6 +18,7 @@ from django.urls import path
 from recetas.views import recetas
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('crear-recetas/', recetas, name = 'receta'),

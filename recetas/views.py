@@ -1,8 +1,6 @@
 from django.shortcuts import render
-
-from recetas.models import receta_1a3
-from recetas.models import receta_4a6
-from recetas.models import receta_7a10
+from django.http import HttpResponse
+from recetas.models import receta_1a3, receta_4a6, receta_7a10
 
 # Create your views here.
 
@@ -12,3 +10,5 @@ def recetas(request):
     receta7_10 = receta_7a10.objects.all
     context = {'receta1_3': receta1_3, 'receta4_6': receta4_6, 'receta7_10': receta7_10}
     return render(request,'recetas.html', context = context)
+
+

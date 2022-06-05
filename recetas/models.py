@@ -10,7 +10,7 @@ class receta_1a3(models.Model):
     cantidad_2 = models.FloatField(null=True , blank = True)
     ingrediente_3 = models.CharField(max_length = 30)
     cantidad_3 = models.FloatField(null=True , blank = True)
-    procedimiento = models.CharField(max_length = 100,null=True , blank = True)
+    procedimiento = models.CharField(max_length = 500,null=True , blank = True)
     
 class receta_4a6(models.Model):
     nombre = models.CharField(max_length = 20)
@@ -26,7 +26,7 @@ class receta_4a6(models.Model):
     cantidad_5 = models.FloatField(null=True , blank = True)
     ingrediente_6 = models.CharField(max_length = 30)
     cantidad_6 = models.FloatField(null=True , blank = True)
-    procedimiento = models.CharField(max_length = 100,null=True , blank = True)
+    procedimiento = models.CharField(max_length = 500,null=True , blank = True)
 
     
 class receta_7a10(models.Model):
@@ -51,4 +51,4 @@ class receta_7a10(models.Model):
     cantidad_9 = models.FloatField(null=True , blank = True)
     ingrediente_10 = models.CharField(max_length = 30)
     cantidad_10 = models.FloatField(null=True , blank = True)
-    procedimiento = models.CharField(max_length = 100,null=True , blank = True)
+    procedimiento = models.CharField(max_length = 500,null=True , blank = True)
