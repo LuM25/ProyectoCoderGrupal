@@ -9,7 +9,8 @@
         <h1>Crear Nueva Receta</h1>
     </div>
     <div>
-        <form action="" method="POST">{% csrf_token %}
+        <form action="" method="POST">
+            {% csrf_token %}
             <div>
                 <label>Nombre:
                     {{form.nombre}}
