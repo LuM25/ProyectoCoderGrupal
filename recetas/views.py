@@ -25,3 +25,23 @@ class ListaRecetas_1a3(ListView):
     model = receta_1a3
     template_name= 'recetas.html'
 
+class CrearReceta_4a6(CreateView):
+    model = receta_4a6
+    form_class = FormCrearReceta_1a3
+    template_name = 'crear_receta.html'
+    success_url = reverse_lazy('recetas:lista_recetas')
+
+class ListaRecetas_4a6(ListView):
+    model = receta_4a6
+    template_name= 'recetas.html'
+
+class CrearReceta_7a10(CreateView):
+    model = receta_7a10
+    form_class = FormCrearReceta_1a3
+    template_name = 'crear_receta.html'
+    success_url = reverse_lazy('recetas:lista_recetas')
+
+class ListaRecetas_7a10(ListView):
+    model = receta_7a10
+    template_name= 'recetas.html'
+
