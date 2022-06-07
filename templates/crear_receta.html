@@ -6,7 +6,7 @@
 
 <div>
     <div>
-        <h1>Crear Nueva Receta</h1>
+        <h1>Crear Nueva Receta con hasta 3 ingredientes</h1>
     </div>
     <div>
         <form action="" method="POST">
@@ -23,7 +23,7 @@
                     </label>
                 </div>
                 <div>
-                    <label>Cantidad 1
+                    <label>Cantidad:
                         {{form.cantidad_1}}
                     </label>
                 </div>
@@ -35,7 +35,7 @@
                     </label>
                 </div>
                 <div>
-                    <label>Cantidad 2
+                    <label>Cantidad:
                         {{form.cantidad_2}}
                     </label>
                 </div>
@@ -46,7 +46,7 @@
                         </label>
                     </div>
                     <div>
-                        <label>Cantidad 3
+                        <label>Cantidad:
                             {{form.cantidad_3}}
                         </label>
                     </div>
@@ -63,5 +63,241 @@
         </form>
     </div>
 </div>
+<div>
+    <div>
+        <h1>Crear Nueva Receta con hasta 6 ingredientes</h1>
+    </div>
+    <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div>
+                <label>Nombre:
+                    {{form.nombre}}
+                </label>
+            </div>
+            <div>
+                <div>
+                    <label>Ingrediente 1
+                        {{form.ingrediente_1}}
+                    </label>
+                </div>
+                <div>
+                    <label>Cantidad:
+                        {{form.cantidad_1}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label>Ingrediente 2
+                        {{form.ingrediente_2}}
+                    </label>
+                </div>
+                <div>
+                    <label>Cantidad:
+                        {{form.cantidad_2}}
+                    </label>
+                </div>
+                <div>
+                    <div>
+                        <label>Ingrediente 3
+                            {{form.ingrediente_3}}
+                        </label>
+                    </div>
+                    <div>
+                        <label>Cantidad:
+                            {{form.cantidad_3}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Ingrediente 4
+                            {{form.ingrediente_1}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Cantidad:
+                            {{form.cantidad_1}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Ingrediente 5
+                            {{form.ingrediente_2}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Cantidad:
+                            {{form.cantidad_2}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                            <label>Ingrediente 6
+                                {{form.ingrediente_3}}
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Cantidad 6
+                                {{form.cantidad_3}}
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                    <label>Procedimiento:
+                        {{form.procedimiento}}
+                    </label>
+                </div>
+            </div>
+            <div>
+                <button class="btn_guardar" type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <div>
+            <h1>Crear Nueva Receta con hasta 10 ingredientes</h1>
+        </div>
+        <div>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div>
+                    <label>Nombre:
+                        {{form.nombre}}
+                    </label>
+                </div>
+                <div>
+                    <div>
+                        <label>Ingrediente 1
+                            {{form.ingrediente_1}}
+                        </label>
+                    </div>
+                    <div>
+                        <label>Cantidad:
+                            {{form.cantidad_1}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label>Ingrediente 2
+                            {{form.ingrediente_2}}
+                        </label>
+                    </div>
+                    <div>
+                        <label>Cantidad:
+                            {{form.cantidad_2}}
+                        </label>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Ingrediente 3
+                                {{form.ingrediente_3}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_3}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Ingrediente 4
+                                {{form.ingrediente_1}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_1}}
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Ingrediente 5
+                                {{form.ingrediente_2}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_2}}
+                            </label>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Ingrediente 6
+                                    {{form.ingrediente_3}}
+                                </label>
+                            </div>
+                            <div>
+                                <label>Cantidad:
+                                    {{form.cantidad_3}}
+                                </label>
+                            </div>
+                            <div>
+                            </div>
+                            <div>
+                            <label>Ingrediente 7
+                                {{form.ingrediente_1}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_1}}
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Ingrediente 8
+                                {{form.ingrediente_2}}
+                            </label>
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_2}}
+                            </label>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Ingrediente 9
+                                    {{form.ingrediente_3}}
+                                </label>
+                            </div>
 
+                        </div>
+                        <div>
+                            <label>Cantidad:
+                                {{form.cantidad_2}}
+                            </label>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Ingrediente 10
+                                    {{form.ingrediente_3}}
+                                </label>
+                            </div>
+                            <div>
+                                <label>Cantidad:
+                                    {{form.cantidad_3}}
+                                </label>
+                            </div>
+                        <label>Procedimiento:
+                            {{form.procedimiento}}
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn_guardar" type="submit">Guardar</button>
+                </div>
+            </form>
 {% endblock contenido %}
