@@ -1,7 +1,10 @@
 from django.urls import path
-from recetas.views import recetas
+from .views import *
+
+app_name = 'recetas'
 
 urlpatterns = [ 
-    path('recetas/', recetas, name = recetas)
+    path('', ListaRecetas_1a3.as_view(), name = 'lista_recetas'),
+    path('crear-receta/', CrearReceta_1a3.as_view(), name='crear_receta'),
 ]
 

@@ -1,21 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block titulo %} CREAR RECETA {% endblock titulo %}
+
+{% block contenido %}
 
 <h1> Recetas con hasta 3 ingredientes! </h1>
-<h2> {{receta_1a3.name}} </h2>
+<div class="d-flex" style="margin-top:3rem; margin-left:7rem; margin-bottom:3rem;">
+    {% for receta in object_list %}
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{receta.nombre}}</h5>
+            <p class="card-text">{{receta.procedimiento}}</p>
+            <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
 
 <h1> Recetas con hasta 6 ingredientes! </h1>
-<h2>  {{receta_4a6.name}}</h2>
+<div class="d-flex" style="margin-top:3rem; margin-left:7rem; margin-bottom:3rem;">
+    {% for receta in object_list %}
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{receta.nombre}}</h5>
+            <p class="card-text">{{receta.procedimiento}}</p>
+            <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
 
 <h1>  Recetas con hasta 10 ingredientes!</h1>
-<h2>  {{receta_7a10.name}} </h2>
+<div class="d-flex" style="margin-top:3rem; margin-left:7rem; margin-bottom:3rem;">
+    {% for receta in object_list %}
 
-</body>
-</html>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{receta.nombre}}</h5>
+            <p class="card-text">{{receta.procedimiento}}</p>
+            <a href="#" class="btn btn-primary">Ver mas!</a>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+{% endblock contenido %}
