@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titulo %} CREAR RECETA {% endblock titulo %}
+
+{% block contenido %}
+
+{% if form %}
+<h1>Receta de 1 a 3 ingredientes</h1>
+<h2 style="margin-left:30rem">Complete los campos de la nueva receta</h2>
+<form action="" method="POST" style="margin-left:40rem;margin-top:7rem">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" , value="Enviar">
+</form>
+{% endif %}
+
+{% endblock contenido %}
