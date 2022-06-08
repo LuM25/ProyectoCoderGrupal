@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 
-class receta_1a3(models.Model):
-    nombre = models.CharField(max_length = 20)
+class Receta_1a3(models.Model):
+    name = models.CharField(max_length = 20)
     ingrediente_1 = models.CharField(max_length = 30, default = '')
     cantidad_1 = models.FloatField(null=True , blank = True)
     ingrediente_2 = models.CharField(max_length = 30)
@@ -12,8 +12,8 @@ class receta_1a3(models.Model):
     cantidad_3 = models.FloatField(null=True , blank = True)
     procedimiento = models.CharField(max_length = 500,null=True , blank = True)
     
-class receta_4a6(models.Model):
-    nombre = models.CharField(max_length = 20)
+class Receta_4a6(models.Model):
+    name = models.CharField(max_length = 20)
     ingrediente_1 = models.CharField(max_length = 30)
     cantidad_1 = models.FloatField(null=True , blank = True)
     ingrediente_2 = models.CharField(max_length = 30)
@@ -29,8 +29,8 @@ class receta_4a6(models.Model):
     procedimiento = models.CharField(max_length = 500,null=True , blank = True)
 
     
-class receta_7a10(models.Model):
-    nombre = models.CharField(max_length = 20)
+class Receta_7a10(models.Model):
+    name = models.CharField(max_length = 20)
     ingrediente_1 = models.CharField(max_length = 30)
     cantidad_1 = models.FloatField(null=True , blank = True)
     ingrediente_2 = models.CharField(max_length = 30)
