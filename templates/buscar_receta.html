@@ -6,22 +6,22 @@
 
 {% block contenido %}
 
-<h1 style="margin-left:30rem">Aca va el contenido de las recetas/h1>
-{% if products %}
+<h1 style="margin-left:30rem"> </h1>
+{% if receta %}
     <div class="d-flex" style="margin-top:5rem; margin-left:7rem">
-        {% for receta in receta %}
+        {% for receta in recetas %}
             
             <div class="d-flex" style="margin-top:5rem; margin-left:7rem">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">{{receta_1a4.name}}</h5>
-                        <p class="card-text">{{receta_1a4.ingediente_1}}</p>
-                        <p class="card-text">{{receta_1a4.cantidad_1}}</p>
-                        <p class="card-text">{{receta_1a4.ingediente_2}}</p>
-                        <p class="card-text">{{receta_1a4.cantidad_2}}</p>
-                        <p class="card-text">{{receta_1a4.ingediente_3}}</p>
-                        <p class="card-text">{{receta_1a4.cantidad_3}}</p>
-                        <p class="card-text">{{receta_1a4.procedimiento}}</p>
+                        <h5 class="card-title">{{receta_1a3.name}}</h5>
+                        <p class="card-text">{{receta_1a3.ingediente_1}}</p>
+                        <p class="card-text">{{receta_1a3.cantidad_1}}</p>
+                        <p class="card-text">{{receta_1a3.ingediente_2}}</p>
+                        <p class="card-text">{{receta_1a3.cantidad_2}}</p>
+                        <p class="card-text">{{receta_1a3.ingediente_3}}</p>
+                        <p class="card-text">{{receta_1a3.cantidad_3}}</p>
+                        <p class="card-text">{{receta_1a3.procedimiento}}</p>
                         <a href="#" class="btn btn-primary">Descargar</a>
                     </div>
                 </div>
