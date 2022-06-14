@@ -110,7 +110,7 @@ class ActualizarReceta_7a10(UpdateView):
 
 ########################################################### SEARCH VIEW ######################################################################
 def buscar_receta_1a3(request):
-    recetas = Receta_1a3.objects.filter(nombre__icontains=request.GET['search'])
+    recetas = Receta_1a3.objects.filter(name__icontains=request.GET['search'])
     if recetas.exists():
         context = {'recetas':recetas}
     else:
@@ -118,7 +118,7 @@ def buscar_receta_1a3(request):
     return render(request, 'buscar_receta_1a3.html', context = context)
 
 def buscar_receta_4a6(request):
-    recetas = Receta_4a6.objects.filter(nombre__icontains=request.GET['search'])
+    recetas = Receta_4a6.objects.filter(name__icontains=request.GET['search'])
     if recetas.exists():
         context = {'recetas':recetas}
     else:
@@ -126,7 +126,7 @@ def buscar_receta_4a6(request):
     return render(request, 'buscar_receta_4a6.html', context = context)
 
 def buscar_receta_7a10(request):
-    recetas = Receta_7a10.objects.filter(nombre__icontains=request.GET['search'])
+    recetas = Receta_7a10.objects.filter(name__icontains=request.GET['search'])
     if recetas.exists():
         context = {'recetas':recetas}
     else:
