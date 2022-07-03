@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titulo %} ACTUALIZACION DE USUARIO {% endblock titulo %}
+
+{% block contenido %}
+
+<h1 style="margin-top: 5rem; margin-left: 5rem;">Cambiar Contraseña</h1>
+<a style="margin-left: 5rem; margin-bottom: 20px;" class="btn seleccion_ch back disable-select" href="{% url 'users_app:user_panel' %}">Regresar</a>
+<div style="margin-left: 5rem;">
+    <h3 style="margin-bottom: 20px;">Bienvenido: {{user}}</h3>
+    <form action="" method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn seleccion save disable-select" style="margin-top: 20px;" type="submit">Guardar</button>
+    </form>
+    
+</div>
+
+{% endblock contenido %}

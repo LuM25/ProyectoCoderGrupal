@@ -1,0 +1,30 @@
+{% extends 'users/base_users.html' %}
+
+{% block titulo %} LOGIN {% endblock titulo %}
+
+{% block contenido %}
+
+<div>
+    <main class="img-fondo3">
+        <div class="login-box">
+            <img src="img/logo.png" class="avatar" alt="Avatar Image">
+            <h1>Iniciar Sesión</h1>
+            <form>{% csrf_token %}
+                <!-- USERNAME INPUT -->
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="Ingrese el Usuario">
+                <!-- PASSWORD INPUT -->
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Ingrese la Contraseña">
+            </form>
+            
+            <input type="submit" value="Entrar" onclick="location.href='index.html'">
+            <a href="#">¿Perdiste tu Contraseña?</a><br>
+            <a href="#">¿No tienes una Cuenta?</a>
+
+        </div>
+    </main>
+
+</div>
+
+{% endblock contenido %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block titulo %} ELIMINAR RECETA {% endblock titulo %}
+
+{% block contenido %}
+
+
+<h3 style="color: red">Estas por eliminar esta receta: {{object.nombre}}, ¿Seguro que desea eliminar?</h3>
+
+<form method = "POST">
+    {% csrf_token %}
+    <button class="btn btn-danger" type="submit">Eliminar</button>
+    <a class="btn btn-primary" href="/recetas/">Regresar</a>
+</form>
+
+
+{% endblock contenido %}

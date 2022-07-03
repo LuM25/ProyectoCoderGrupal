@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block titulo %} PANEL {% endblock titulo %}
+
+{% block contenido %}
+
+
+<h1 style="margin-top: 5rem; margin-left: 5rem;">Panel de Usuario</h1>
+<div style="margin-left: 5rem;">
+    <h3 style="margin-bottom: 20px;">Bienvenido: {{user}}</h3>
+<ul>
+    <li><a href="{% url 'users_app:user_logout' %}">Cerrar Sesión</a></li>
+    <li><a href="{% url 'users_app:user_update' %}">Actualizar Datos</a></li>
+</ul>
+</div>
+
+
+
+{% endblock contenido %}

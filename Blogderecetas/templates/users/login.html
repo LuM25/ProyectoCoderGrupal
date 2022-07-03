@@ -1,0 +1,17 @@
+{% extends 'users/base_users.html' %}
+
+{% block titulo %} LOGIN {% endblock titulo %}
+
+{% block contenido %}
+
+
+<h1 style="margin-top: 2rem; margin-left: 40rem; margin-bottom: 2rem;">Acceder al Sistema</h1>
+<div style="margin-left: 41rem;">
+    <form action="" method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Acceder</button>
+    </form>
+</div>
+
+
+{% endblock contenido %}

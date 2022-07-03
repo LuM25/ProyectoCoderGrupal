@@ -1,0 +1,15 @@
+{% extends 'users/base_users.html' %}
+
+{% block titulo %} REGISTRO DE USUARIO {% endblock titulo %}
+
+{% block contenido %}
+
+<h1 style="margin-top: 2rem; margin-left: 40rem; margin-bottom: 2rem;"> Registrar Nuevo Usuario</h1>
+<div style="margin-left: 45rem;">
+    <form action="" method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Registrar</button>
+    </form>
+</div>
+
+{% endblock contenido %}

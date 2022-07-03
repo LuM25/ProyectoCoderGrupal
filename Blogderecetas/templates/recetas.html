@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block titulo %} LISTA DE RECETAS {% endblock titulo %}
+
+{% block contenido %}
+<h1> Recetas </h1>
+
+<form style="margin-left: 50rem;" class="form-inline my-2 my-lg-0" action = "/recetas/buscar-receta/" method = "GET">
+    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search" name = 'search'>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+
+<div class="d-flex" style="margin-top:3rem; margin-left:7rem; margin-bottom:3rem;">
+    {% for receta in lista_recetas %}
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{receta.nombre}}</h5>
+            <p class="card-text">{{receta.procedimiento}}</p>
+            <a href="/recetas/detail-receta/{{receta.id}}/" class="btn btn-primary">Ver mas!</a>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock contenido %}
